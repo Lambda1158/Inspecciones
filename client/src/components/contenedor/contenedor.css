@@ -1,0 +1,11 @@
+.contenedor{
+      background-color: aqua;
+      height: 400px;
+      width: 400px;
+      margin-left: 30%;
+      margin-top:10%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+}
