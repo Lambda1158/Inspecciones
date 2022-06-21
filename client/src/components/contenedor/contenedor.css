@@ -1,11 +1,11 @@
 .contenedor{
       background-color: aqua;
-      height: 400px;
-      width: 400px;
+      height: 700px;
+      width: 800px;
       margin-left: 30%;
       margin-top:10%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-gap: 20px;
 }
