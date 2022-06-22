@@ -1,11 +1,15 @@
-.contenedor{
+.contenedor {
       background-color: aqua;
       height: 700px;
-      width: 800px;
+      width: 700px;
       margin-left: 30%;
-      margin-top:10%;
+      margin-top: 5%;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-gap: 20px;
+      grid-gap: 30px;
+      border: 10px;
+      border-color: red;
+      padding: 20px;
+      box-shadow: inset;
 }
