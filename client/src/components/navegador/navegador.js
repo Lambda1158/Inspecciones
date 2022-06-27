@@ -1,6 +1,6 @@
+import "./navegador.css"
 import React from "react";
-import "./test.css"
-export default function Test({ contenido }) {
+export default function Navegador() {
 
     return (
         <div class="item">

@@ -12,4 +12,8 @@
       border-color: red;
       padding: 20px;
       box-shadow: inset;
+
+      min-height: 0;
+      /* NEW */
+      min-width: 0;
 }

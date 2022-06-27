@@ -10,15 +10,24 @@
     border-radius: 15px;
     border-color: black;
     text-align: center;
+
+
+    overflow: hidden;
+    /* NEW */
+    min-width: 0;
   }
 
 
   h3 {
     color: white;
+    margin-top: 0;
 
   }
 
   .btn {
-    margin-top: 80px;
+    position: relative;
+    width: 90%;
+    border: 0;
+    border-radius: 10px;
     background-color: rgb(118, 87, 148);
   }
