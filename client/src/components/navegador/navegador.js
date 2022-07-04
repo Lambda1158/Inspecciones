@@ -1,14 +1,12 @@
 import "./navegador.css"
 import React from "react";
+import Menu from "../menu/menu";
 export default function Navegador() {
 
     return (
-        <div class="item">
-            <h3>{contenido}</h3>
-            <p>fecha</p>
-            <span>estado</span>
-            <p>comentario</p>
-            <button className="btn">anular</button>
+        <div class="nav">
+            <h2>Hola soy el nav a la izquierda </h2>
+            <Menu />
         </div>
     )
 }
