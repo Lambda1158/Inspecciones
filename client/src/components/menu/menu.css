@@ -1,3 +1,19 @@
 .menu {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    border-style: solid;
+    border-width: 10px;
+    width: 80%;
+    margin-left: 6%;
+    align-items: center;
+}
+
+.menu-item {
+    border-style: solid;
+    border-bottom: 3px;
+    border-width: 3px;
+    padding: 10px;
+
 }

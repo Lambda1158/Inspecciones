@@ -1,18 +1,23 @@
 .nav {
     margin-left: 0%;
-    width: 20%;
+    width: 15%;
     height: 100%;
-    border-width: 10px;
-    border-style: solid;
-    border-color: black;
     overflow-y: auto;
     position: absolute;
     left: 0;
     top: 0;
     display: block;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 60px 0 rgb(0 0 0 / 12%);
+    padding: 20px;
 }
 
 h2 {
     text-align: center;
     color: orange;
+}
+
+h4 {
+    margin-left: 5%;
+
 }
