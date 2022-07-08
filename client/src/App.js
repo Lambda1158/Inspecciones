@@ -1,13 +1,17 @@
 import Contenedor from "./components/contenedor/contenedor";
 import './App.css';
 import Navegador from "./components/navegador/navegador";
-
+import { Route, Routes } from "react-router-dom"
+import Todo from "./components/todo/todo";
 function App() {
   return (
-    <div className="c1">
-      <Navegador />
-      <Contenedor />
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<div className="c1"><Contenedor /><Navegador></Navegador></div>} />
+        <Route path="/todo" element={<Todo />} />
+      </Routes>
+
+    </>
   );
 }
 
