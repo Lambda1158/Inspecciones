@@ -6,6 +6,8 @@ export default function Todo() {
     return (
         <div class="todo">
             <h2>Todo</h2>
+            <label>Agregar un item</label>
+            <input className="input"></input>
             <Link to="/"><button>take me back</button></Link>
         </div>
     )
