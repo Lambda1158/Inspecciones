@@ -7,7 +7,10 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<div className="c1"><Contenedor /><Navegador></Navegador></div>} />
+
+
+
+        <Route path="/" element={<div className="c1"><Contenedor /><Navegador /></div>} />
         <Route path="/todo" element={<Todo />} />
       </Routes>
     </>

@@ -1,4 +1,9 @@
 .todo {
-    margin-left: 30%;
-    margin-top: 20%;
+    margin: auto;
+    background-color: grey;
+    text-align: center;
+    width: 70%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 60px 0 rgb(0 0 0 / 12%);
+    padding: 3%;
 }
