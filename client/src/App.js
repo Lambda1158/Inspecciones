@@ -2,7 +2,7 @@ import Contenedor from "./components/contenedor/contenedor";
 import './App.css';
 import Navegador from "./components/navegador/navegador";
 import { Route, Routes } from "react-router-dom"
-import Todo from "./components/todo/todo";
+import Todolist from "./components/todolist/todolist";
 function App() {
   return (
     <>
@@ -11,7 +11,7 @@ function App() {
 
 
         <Route path="/" element={<div className="c1"><Contenedor /><Navegador /></div>} />
-        <Route path="/todo" element={<Todo />} />
+        <Route path="/todo" element={<Todolist />} />
       </Routes>
     </>
   );
