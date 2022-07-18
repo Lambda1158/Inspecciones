@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import "./todolist.css"
 import Todo from "../todo/todo";
+import Item from "../item/item";
 export default function Todolist() {
     const [todos, setTodos] = useState([])
 
@@ -10,12 +11,28 @@ export default function Todolist() {
         if (!todo.text || /^\s*$/.test(todo.text)) {
             return;
         }
-
-
-
         setTodos([todo, ...todos]);
     };
 
+    const updatedItems = (itemId, newValue) => {
+        if (!newValue.text || /^\s*$/.test(newValue.text)) {
+            return;
+        }
+        setTodos()
+    }
+
+    const completeItem = (id) => {
+        let updatedItems = todos.map(e => {
+            if (e.id === id) {
+                e.isComplete = !e.isComplete
+            }
+            return e
+        })
+        setTodos(updatedItems)
+    }
+    const removeItem = (id) => {
+        setTodos(todos.filter(e => e.id !== id))
+    }
 
     return (
         <div className="todo">
@@ -24,7 +41,11 @@ export default function Todolist() {
             <br></br>
             <Todo onSubmit={addTodo} />
             <br></br>
-            {todos.length < 1 ? <p>no hay nada</p> : todos.map(e => <p key={e.id} id={e.id}>{e.text}</p>)}
+            <Item
+                items={todos}
+                completeItem={completeItem}
+                removeItem={removeItem}
+            />
             <Link to="/"><button>take me back</button></Link>
         </div>
     )
