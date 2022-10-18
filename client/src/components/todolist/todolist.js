@@ -33,11 +33,11 @@ export default function Todolist() {
     const removeItem = (id) => {
         setTodos(todos.filter(e => e.id !== id))
     }
-
+    console.log(todos)
     return (
         <div className="todo">
-            <h2>Todo</h2>
-            <label>Agregar un item</label>
+            <h2>Lista de inspecciones</h2>
+            <label>Agregar un ejemplo</label>
             <br></br>
             <Todo onSubmit={addTodo} />
             <br></br>

@@ -18,7 +18,6 @@ export default function Todo(props) {
         })
         setInput("")
     }
-
     return (
         <form onSubmit={e => handleClick(e)}>
             <input
